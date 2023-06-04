@@ -1,0 +1,160 @@
+#root {
+  padding: 2rem;
+  text-align: center;
+  width: 100%;
+}
+
+/**=======================
+ * *       TASK
+ *  
+ *  
+ *========================**/
+
+ .container{
+  max-width: 800px;
+  width: 100%;
+  margin: 0 auto;
+  
+}
+h1{
+  color:#646681;
+}
+ 
+ .container__header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+ }
+.modalContainer {
+    background-color: #ECEDF6;
+    display: flex;
+    padding: 32px;
+    position: fixed;
+    opacity: 1;
+    width: 450px;
+    /* height: 100vh; */
+    top: 50%;
+    left: 50%;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    transform: translate(-50%, -50%);
+    border-radius:16px;
+    color:#646681;
+    gap:32px;
+}
+  
+  .modalClosed {
+  display: flex;
+  width: 100%;
+    justify-content: space-between;
+    height: 55px;
+    align-items: center;
+  }
+  
+  .modalExit {
+    align-items: center;
+    background-color: #646FF0;
+    border-radius: 50%;
+    color: #fff;
+    display: flex;
+    height: 10px;
+    justify-content: center;
+    padding: 16px;
+    width: 10px;
+  }
+  
+  input {
+    background: #fff;
+  border: 1px solid var(--light);
+  border-radius: 1em;
+  -webkit-border-radius: 1em;
+  -moz-border-radius: 1em;
+  -ms-border-radius: 1em;
+  -o-border-radius: 1em;
+  box-shadow: 0 2px 24px #0003;
+    font-size: 1.3rem;
+    padding: 1em;
+    width: 90%;
+    outline: none;
+    
+  }
+  .task {
+    margin-left: 8px;
+}
+.iconTask {
+  font-size: 48px;
+}
+.taskLabel{
+  display: flex;
+  align-items: center;
+}
+.completas {
+  display: flex;
+  align-items:center;
+  text-decoration: line-through;
+  .noCompleted{
+    background-image: url(./assets/square-check.svg) ;
+  height: 24px;
+  width: 24px;
+  }
+}
+
+.container__tasks {
+  background: orange;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+    height: 60px;
+    padding: 16px;
+    background-color: #fff;
+    border-radius: 16px;
+  }
+  
+  .openModal {
+    background-color: #646FF0;
+    border-radius: 8px;
+    color: #fff;
+    padding:8px 24px;
+    cursor: pointer;
+    font-weight: bold;
+  justify-content: center;
+    
+    
+  }
+
+.noCompleted {
+  /* background: #DEDFE1; */
+  background-image: url(./assets/square.svg);
+  height: 24px;
+  width: 24px;
+  display: flex;
+  align-items:center;
+  
+}
+.container__icons{
+  display: flex;
+  gap: 16px;
+}
+.delete{
+  width: 24px;
+  height: 24px;
+  display: flex;
+  justify-content: center;
+  align-items:center;
+  padding: 16px;
+  background: #ECEDF6;
+}
+.container__body{
+background-color: #ECEDF6;
+    padding: 24px;
+    border-radius:16px;
+    margin-top: 16px;
+    gap: 16px;
+    display: flex;
+    flex-direction: column;
+}
+.counters{
+  margin-top: 60px;
+  text-align: left;
+}
